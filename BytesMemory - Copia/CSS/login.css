@@ -1,0 +1,50 @@
+.login-form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background-color:#B380AA ;
+}
+.login-header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.login-header img{
+    width: 200px;
+}
+
+.login-header h1{
+    font-size: 40px;
+    margin-top: 18px;
+}
+
+.login_entrada{
+    border: 3px solid slateblue ;
+    border-radius: 10px;
+    color:rgb(67, 63, 63);
+    font-size: 20px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    width: 300px;
+    padding: 4px;
+}
+
+.botao-login{
+    background-color: rgb(124, 199, 231);
+    border-radius: 11px ;
+    padding: 10px;
+    max-width: 300px;
+    width: 100%;
+    color: rgb(59, 59, 56);
+}
+
+.botao-login:disabled{
+    background-color:#b89fb3;
+    color: rgb(59, 59, 56);
+    cursor: auto;
+}

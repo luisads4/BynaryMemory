@@ -1,0 +1,162 @@
+body{
+    background-image: url('../images/windows.jpeg');
+    background-size: cover;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(124, 199, 231 , 0.8);
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    margin: 0 0 -10px;
+    border-radius: 15px;
+}
+
+.timer {
+    position:absolute;
+    top:8vh;
+    left:43vw;
+}
+
+span{
+    font-size: 20px;
+    color: rgb(50, 50, 50);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:repeat(5 ,70px);
+    grid-gap: 5px;
+    width: 80%;
+    max-width: 800px;
+    margin:30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.card{
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 10px;
+    background-color:rgb(124, 199, 231);
+    position: relative;
+    transition: all 200ms ease;
+    transform-style: preserve-3d ;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px black;
+}
+.frente{
+   background-repeat: no-repeat;
+   background-color: rgb(124, 199, 231) ;
+   background-size: 70px;
+   background-position: center;
+   border-radius: 10px;
+   transform: rotateY(180deg);
+}
+
+.tras{
+    background-image: url('../images/back.png');    
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #B380AA;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.card[data-card="1"] .face.frente {
+    background-image: url('../images/byte.png');
+    background-size: 130px;
+    background-position: center;
+}
+
+.card[data-card="1"] .face.frente {
+    background-image: url('../images/byte.png');
+    background-size: 180px;
+    background-position: center;
+}
+
+.card[data-card="2"] .face.frente {
+    background-image: url('../images/css.png');
+    background-size: 180px;
+    background-position: center;
+}
+
+.card[data-card="3"] .face.frente {
+    background-image: url('../images/github.png');
+    background-size: 180px;
+    background-position: center;
+}
+
+.card[data-card="4"] .face.frente {
+    background-image: url('../images/helloWord.png');
+    background-size: 130px;
+    background-position: center;
+}
+
+.card[data-card="5"] .face.frente {
+    background-image: url('../images/htmlimg.png');
+    background-size: 180px;
+    background-position: center;
+}
+
+.card[data-card="6"] .face.frente {
+    background-image: url('../images/intelij.png');
+    background-size: 180px;
+    background-position: center;
+}
+
+.card[data-card="7"] .face.frente {
+    background-image: url('../images/java.png');
+    background-size: 160px;
+    background-position: center;
+}
+
+
+.card[data-card="8"] .face.frente {
+    background-image: url('../images/javaScript.png');
+    background-size: 170px;
+    background-position: center;
+}
+
+.card[data-card="9"] .face.frente {
+    background-image: url('../images/jgrasp.png');
+    background-size: 70;
+    background-position: center;
+}
+
+.card[data-card="10"] .face.frente {
+    background-image: url('../images/jgrasp.png');
+    background-size: 70;
+    background-position: center;
+}
+
+
+.timerDisplay{
+    background-color: aliceblue;
+}
+
+
+
